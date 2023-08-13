@@ -14,6 +14,11 @@ public class TestService {
 
 
     public void say(){
+        try{
+            Thread.sleep(11000);
+        }catch (InterruptedException e){
+            System.out.println("interrupted");
+        }
         System.out.println("service say....");
     }
 }
